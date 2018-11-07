@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+  {% include head.html %}
+
+  <body class="landing">
+
+    <div id="bgStars">
+      <video autoplay muted loop id="bgVideo">
+        <source src="images/starsVideo.mp4" type="video/mp4">
+      </video>
+      <div id="bgStarNoise"> <!-- make perceived quality of video higher by bg noise; TODO: tiled small noise image -->
+      </div>
+    </div>
+
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+      {{ content }}
+
+      {% include footer.html %}
+
+      {% include scripts.html %}
+
+    </div>
+
+  </body>
+
+</html>
