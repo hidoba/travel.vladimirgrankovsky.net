@@ -1823,7 +1823,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			justify-content: center;
 		}
 
-		* #bgVideo {
+		* #bgVideo, #bgVideoImg, #bgStarNoiseImg {
 			position: fixed;
 			min-width: 100%;
 			min-height: 100%;

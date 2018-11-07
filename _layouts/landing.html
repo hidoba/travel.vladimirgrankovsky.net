@@ -7,11 +7,12 @@
   <body class="landing">
 
     <div id="bgStars">
-      <video autoplay muted loop id="bgVideo">
-        <source src="images/starsVideo.mp4" type="video/mp4">
+      <img id="bgVideoImg" src="/images/starsImage.jpg" />
+      <video id="bgVideo" autoplay loop muted playsinline>
+        <source src="/images/starsVideo.mp4" type="video/mp4" autoplay="autoplay" loop="loop" onended="this.play()">
       </video>
-      <div id="bgStarNoise"> <!-- make perceived quality of video higher by bg noise; TODO: tiled small noise image -->
-      </div>
+      <!-- make perceived quality of video higher by bg noise; TODO: tiled small noise image -->
+      <img id="bgStarNoiseImg" src="/images/starsNoiseMask.png" />
     </div>
 
 
