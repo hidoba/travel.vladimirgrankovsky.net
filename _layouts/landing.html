@@ -11,8 +11,10 @@
       <video id="bgVideo" autoplay loop muted playsinline>
         <source src="/images/starsVideo.mp4" type="video/mp4" autoplay="autoplay" loop="loop" onended="this.play()">
       </video>
-      <!-- make perceived quality of video higher by bg noise; TODO: tiled small noise image -->
-      <img id="bgStarNoiseImg" src="/images/starsNoiseMask.png" />
+      <!-- make perceived quality of video higher by bg noise; -->
+      <!-- old version (no tiles) <img id="bgStarNoiseImg" src="/images/starsNoiseMask.png" /> -->
+      <div id="bgStarNoise"> <!-- tiles -->
+      </div>
     </div>
 
 
